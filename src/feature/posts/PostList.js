@@ -26,10 +26,8 @@ function PostList() {
   //Display content based on API fetching status
   let content;
   if (postStatus === "loading") {
-    console.log("loading");
     content = <p>"Loading..."</p>;
   } else if (postStatus === "succeeded") {
-    console.log("succeeded");
     // const orderedPosts = posts
     //   .slice()
     //   .sort((a, b) => b.date.localeCompare(a.date));
