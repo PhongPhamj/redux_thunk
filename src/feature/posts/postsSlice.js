@@ -11,7 +11,7 @@ const initialState = {
 };
 
 export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
-  console.log("fetch")
+  console.log("fetch posts")
   const response = await axios.get(POSTS_URL)
   return response.data
 })
@@ -71,7 +71,6 @@ const postSlice = createSlice({
           };
           return post;
         });
-
         // Add any fetched posts to the array
         state.posts = state.posts.concat(loadedPosts);
       })
