@@ -26,7 +26,6 @@ const ReactionButtons = ({ post }) => {
             </button>
         )
     })
-
     return <div>{reactionButtons}</div>
 }
 export default ReactionButtons
